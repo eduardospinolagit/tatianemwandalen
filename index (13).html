@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estratégia de Marketing | Tatiane M. Wandalen Advocacia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0a0a0a;
+  --ink:#171717;
+  --muted:#6b6b6b;
+  --muted-soft:#8f8f8f;
+  --line:#e4e4e4;
+  --line-soft:#efefef;
+  --bg:#ffffff;
+  --bg-2:#f4f4f3;
+  --bg-3:#ebebea;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:'Inter',sans-serif;color:var(--black);letter-spacing:-0.02em;line-height:1.12;}
+h1{font-weight:800;}
+h2{font-weight:700;}
+h3{font-weight:600;}
+.wrap{max-width:880px;margin:0 auto;padding:0 28px;}
+.section{padding:80px 0;border-bottom:1px solid var(--line-soft);}
+.section:last-child{border-bottom:none;}
+.eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted-soft);font-weight:600;margin-bottom:18px;}
+h2{font-size:40px;margin-bottom:20px;}
+h3{font-size:23px;}
+p{margin-bottom:16px;color:#3d3d3d;font-weight:400;}
+p.lead{font-size:19px;color:var(--muted);font-weight:400;line-height:1.6;}
+strong{font-weight:600;color:var(--black);}
+.hero{background:var(--black);color:#fff;padding:120px 0 104px;}
+.hero .eyebrow{color:#9a9a9a;}
+.hero h1{color:#fff;font-size:60px;line-height:1.05;margin-bottom:26px;letter-spacing:-0.03em;}
+.hero p{color:#bcbcbc;font-size:20px;max-width:620px;font-weight:300;}
+.hero .brand{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#7a7a7a;margin-top:48px;padding-top:26px;border-top:1px solid #2a2a2a;display:inline-block;}
+.card{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:30px;margin-bottom:16px;transition:border-color .2s;}
+.card:hover{border-color:#cfcfcf;}
+.card h3{margin-bottom:10px;display:flex;align-items:center;gap:12px;font-size:20px;}
+.card .ic{font-size:13px;font-weight:700;letter-spacing:1px;color:var(--muted-soft);font-variant-numeric:tabular-nums;}
+.card p{margin-bottom:0;font-size:15px;color:#4a4a4a;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:680px){.grid{grid-template-columns:1fr;}.hero h1{font-size:40px;}h2{font-size:31px;}.hero{padding:88px 0 72px;}}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-top:10px;}
+.compare .col{padding:28px;}
+.compare .bad{background:var(--bg-2);}
+.compare .good{background:var(--black);color:#fff;}
+.compare h4{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px;font-weight:600;}
+.compare .bad h4{color:var(--muted);}
+.compare .good h4{color:#9a9a9a;}
+.compare ul{list-style:none;}
+.compare li{padding:10px 0;font-size:14px;border-bottom:1px solid var(--line);}
+.compare .good li{border-bottom:1px solid #2a2a2a;color:#e0e0e0;}
+.compare li:last-child{border-bottom:none;}
+@media(max-width:680px){.compare{grid-template-columns:1fr;}}
+.turn{background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:60px 44px;}
+.turn .big{font-size:32px;line-height:1.2;color:var(--black);margin-bottom:20px;font-weight:700;letter-spacing:-0.02em;}
+.turn .big span{color:var(--muted-soft);}
+.turn p{color:#4a4a4a;font-size:17px;max-width:620px;margin-bottom:0;}
+.step{display:flex;gap:22px;align-items:flex-start;}
+.step .num{flex:0 0 44px;height:44px;width:44px;border-radius:50%;background:var(--black);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;font-variant-numeric:tabular-nums;}
+.step .body{padding-bottom:26px;}
+.step .body h3{font-size:20px;margin-bottom:5px;}
+.step .body p{margin-bottom:0;font-size:15px;color:#4a4a4a;}
+.connector{margin-left:21px;height:22px;border-left:2px solid var(--bg-3);}
+.badge{display:inline-block;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;font-weight:600;padding:5px 11px;border-radius:4px;margin-bottom:14px;}
+.b-base{background:var(--black);color:#fff;}
+.b-opt{background:transparent;color:var(--ink);border:1px solid var(--ink);}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+.tag{background:var(--bg-2);border:1px solid var(--line);border-radius:5px;padding:11px 16px;font-size:14px;}
+.tag b{color:var(--black);font-weight:600;}
+.feature{background:var(--bg-2);border:1px solid var(--line);border-left:3px solid var(--black);}
+.roteiro{background:var(--bg-2);border:1px solid var(--line);border-radius:6px;padding:24px;margin-bottom:16px;}
+.roteiro .lbl{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted-soft);font-weight:600;}
+.roteiro p{font-size:15px;margin:5px 0 14px;color:#3d3d3d;}
+.roteiro p:last-child{margin-bottom:0;}
+.checklist{list-style:none;}
+.checklist li{padding:12px 0 12px 30px;position:relative;border-bottom:1px solid var(--line-soft);font-size:15.5px;color:#3d3d3d;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li:before{content:"";position:absolute;left:0;top:20px;width:10px;height:10px;background:var(--black);border-radius:2px;}
+.closing{background:var(--black);color:#fff;border-radius:8px;padding:72px 44px;}
+.closing h2{color:#fff;font-size:36px;}
+.closing p{color:#bcbcbc;font-size:18px;max-width:600px;font-weight:300;}
+.closing .sig{margin-top:32px;font-size:17px;color:#fff;font-weight:500;}
+footer{text-align:center;padding:40px 0;font-size:12px;color:var(--muted-soft);letter-spacing:.5px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Estratégia de Marketing</div>
+    <h1>Um plano feito para trazer resultado de verdade</h1>
+    <p>Uma análise honesta do que aconteceu antes e do caminho para o seu escritório ser encontrado por quem realmente precisa de você.</p>
+    <div class="brand">Tatiane M. Wandalen Advocacia</div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Antes de tudo</div>
+    <h2>Você não está errada em desconfiar</h2>
+    <p class="lead">Se você investiu em marketing uma vez e não viu nenhum retorno, é natural ficar com o pé atrás antes de tentar de novo. Essa cautela faz sentido.</p>
+    <p>Por isso, antes de propor qualquer coisa, eu fiz uma análise do que foi feito no seu perfil. A ideia aqui não é prometer milagre, e sim te mostrar com clareza o que realmente aconteceu, para que você entenda por que não houve resultado e tenha segurança sobre o que precisa ser diferente desta vez.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">O diagnóstico</div>
+    <h2>O que aconteceu da última vez</h2>
+    <p class="lead">Analisando o seu perfil e as ferramentas públicas de anúncios, o cenário ficou bem claro.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="ic">01</span> Tráfego pago que nunca existiu</h3>
+        <p>Não há nenhuma campanha de tráfego estruturada vinculada ao seu perfil, nem na Biblioteca de Anúncios da Meta, nem no Google. O único registro é um post pontual impulsionado, voltado a visualização. Impulsionar um post não é uma campanha de tráfego pago: gera alcance, não gera contato.</p>
+      </div>
+      <div class="card">
+        <h3><span class="ic">02</span> Conteúdo sem estratégia</h3>
+        <p>Alguns posts estáticos, espaçados, por poucos meses. Sem constância, sem o formato que gera autoridade e sem nenhuma chamada para transformar seguidor em cliente. Isso é presença de fachada, não estratégia de conteúdo.</p>
+      </div>
+      <div class="card">
+        <h3><span class="ic">03</span> Sem estrutura no Google</h3>
+        <p>Sem um site, não existia base para ser encontrada por quem pesquisa ativamente por um advogado, nem uma presença sólida de autoridade quando alguém busca pelo seu nome.</p>
+      </div>
+      <div class="card">
+        <h3><span class="ic">04</span> O resultado que prova tudo</h3>
+        <p>Zero contato no WhatsApp. Não foram contatos ruins ou desqualificados. Foi a ausência total de contatos. Quando até uma campanha mal feita costuma gerar algum retorno, o zero absoluto indica que nada foi direcionado para gerar cliente.</p>
+      </div>
+    </div>
+    <h3 style="margin-top:32px;margin-bottom:16px;">A diferença na prática</h3>
+    <div class="compare">
+      <div class="col bad">
+        <h4>O que foi feito</h4>
+        <ul>
+          <li>Impulsionar um post (foco em visualização)</li>
+          <li>Posts estáticos e esporádicos</li>
+          <li>Nenhum relatório ou número</li>
+          <li>Sucesso medido em curtidas</li>
+        </ul>
+      </div>
+      <div class="col good">
+        <h4>O que faz um trabalho de verdade</h4>
+        <ul>
+          <li>Campanha com objetivo de conversa e captação</li>
+          <li>Conteúdo constante e estratégico</li>
+          <li>Acompanhamento transparente com dados</li>
+          <li>Sucesso medido em cliente no WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="turn">
+      <div class="big">O problema não foi o marketing. O problema é que <span>nunca houve marketing de verdade.</span></div>
+      <p>Marketing não é sobre post bonito nem sobre número de visualização. É sobre resultado. E resultado, no seu caso, tem um nome só: cliente certo chegando no seu WhatsApp. Tudo que eu proponho a seguir é desenhado a partir disso.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">A estratégia</div>
+    <h2>O caminho que eu faria com você</h2>
+    <p class="lead">Um sistema simples de entender, no qual cada etapa tem um propósito claro: transformar interesse em cliente.</p>
+
+    <h3 style="margin:32px 0 22px;">O funil de captação</h3>
+    <div class="step"><div class="num">1</div><div class="body"><h3>Anúncio que educa</h3><p>Tráfego pago na Meta com conteúdo que explica um direito ou resolve uma dúvida real do cliente (por exemplo, inventário ou regularização). O objetivo da campanha é gerar conversa, não visualização.</p></div></div>
+    <div class="connector"></div>
+    <div class="step"><div class="num">2</div><div class="body"><h3>Contato direto no WhatsApp</h3><p>O anúncio leva direto para o WhatsApp, sem etapas no meio que esfriam o interesse. Quem clicou já inicia uma conversa.</p></div></div>
+    <div class="connector"></div>
+    <div class="step"><div class="num">3</div><div class="body"><h3>Triagem inteligente e automática</h3><p>Um fluxo automatizado acolhe a pessoa e organiza as informações do caso (qual a situação, cidade, documentação). Ele filtra e qualifica, sem dar orientação jurídica, que continua sendo papel exclusivo seu.</p></div></div>
+    <div class="connector"></div>
+    <div class="step"><div class="num">4</div><div class="body"><h3>O cliente chega até você</h3><p>Você recebe o contato já qualificado e pronto para a consulta jurídica, sem perder tempo com quem não é caso real.</p></div></div>
+
+    <h3 style="margin:34px 0 18px;">Os pilares que sustentam tudo</h3>
+    <div class="card">
+      <span class="badge b-base">Base</span>
+      <h3>Google e site institucional</h3>
+      <p>Ser encontrada por quem já está procurando um advogado. O site trabalha em duas frentes: SEO (presença orgânica que, ao longo do tempo, traz contato sem custo por clique) e Google Ads (resultado mais imediato enquanto o orgânico amadurece). Ele também gera autoridade quando alguém pesquisa o seu nome.</p>
+    </div>
+    <div class="card">
+      <span class="badge b-base">Base</span>
+      <h3>Google Meu Negócio</h3>
+      <p>Aparecer no mapa e na busca local quando alguém pesquisa por advogada em Gaspar. É um dos canais mais fortes (e gratuitos) de presença para quem atua em uma região definida.</p>
+    </div>
+    <div class="card feature">
+      <span class="badge b-opt">Opcional, porém transformador</span>
+      <h3>Conteúdo de autoridade (vídeos e Reels)</h3>
+      <p>A longo prazo, é o que mais constrói autoridade e confiança, e advogado se contrata pela confiança. Vídeos curtos com você falando sobre os temas que domina têm o maior alcance orgânico hoje. Essa etapa é uma escolha sua: se preferir não aparecer em vídeo, trabalhamos com formatos alternativos, como carrosséis educativos e conteúdos sem a sua imagem. Recomendo fortemente, mas você decide o ritmo.</p>
+    </div>
+    <div class="card">
+      <span class="badge b-base">Base</span>
+      <h3>Acompanhamento e relatórios</h3>
+      <p>Você acompanha tudo: quantos contatos chegaram, quanto custou cada um e o que está funcionando. O oposto exato de pagar às cegas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Os temas</div>
+    <h2>Sobre o que vamos comunicar</h2>
+    <p class="lead">A comunicação parte sempre da dor real do cliente, porque é isso que faz alguém parar e prestar atenção.</p>
+    <div class="card feature">
+      <span class="badge b-base">Prioridade</span>
+      <h3>Inventário</h3>
+      <p>Seu foco principal de captação. É um tema com demanda alta e urgência natural (existe prazo legal para abrir o inventário, e o atraso pode aumentar o imposto da família). Como quase sempre envolve um imóvel, ele conecta diretamente com toda a sua especialidade imobiliária e pode abrir caminho para outros serviços, como regularização e transferência de escritura.</p>
+    </div>
+    <p style="margin-top:20px;">Os demais temas trabalhados, sempre de forma informativa e dentro das regras da OAB:</p>
+    <div class="tags">
+      <div class="tag"><b>Regularização de imóvel</b></div>
+      <div class="tag"><b>Adjudicação compulsória</b></div>
+      <div class="tag"><b>Usucapião</b></div>
+      <div class="tag"><b>Compra e venda segura</b></div>
+      <div class="tag"><b>Loteamentos e desmembramentos</b></div>
+      <div class="tag"><b>Incorporação imobiliária</b></div>
+      <div class="tag"><b>Instituição de condomínio</b></div>
+    </div>
+
+    <h3 style="margin:34px 0 16px;">Exemplos de conteúdo (amostra do trabalho)</h3>
+    <div class="roteiro">
+      <p class="lbl">Exemplo, tema Inventário</p>
+      <p><strong>Abertura:</strong> Ficou um imóvel no nome de quem faleceu? Existe uma coisa que a família precisa saber antes de tomar qualquer decisão.</p>
+      <p><strong>Desenvolvimento:</strong> Enquanto o inventário não é feito, esse imóvel não pode ser vendido, transferido ou colocado no nome dos herdeiros. E a lei prevê um prazo para abrir o inventário, sendo que o atraso pode aumentar o imposto a pagar.</p>
+      <p><strong>Fechamento:</strong> Se você está passando por isso, entender o caminho certo evita dor de cabeça e custo a mais. Qualquer dúvida sobre a sua situação, estou à disposição.</p>
+    </div>
+    <div class="roteiro">
+      <p class="lbl">Exemplo, tema Compra segura</p>
+      <p><strong>Abertura:</strong> Vai comprar um imóvel? Não assine nada antes de conferir estes documentos.</p>
+      <p><strong>Desenvolvimento:</strong> Antes de fechar negócio, vale checar a matrícula atualizada do imóvel, a existência de dívidas ou processos no nome do vendedor e se o imóvel está totalmente regularizado. Pular essa etapa é o que faz muita gente comprar uma dor de cabeça junto com a casa.</p>
+      <p><strong>Fechamento:</strong> Comprar com segurança começa por tirar essas dúvidas antes de assinar. Estou à disposição para ajudar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Segurança</div>
+    <h2>Tudo dentro das regras da OAB</h2>
+    <p class="lead">Marketing jurídico tem limites próprios, e respeitá-los protege a sua imagem e a sua tranquilidade com a Ordem.</p>
+    <ul class="checklist">
+      <li>Comunicação sempre informativa e educativa, nunca uma oferta mercantil de serviços.</li>
+      <li>Sem promessa de resultado e sem divulgação de preços nos anúncios.</li>
+      <li>Tráfego pago e impulsionamento usados da forma permitida, com conteúdo que ensina.</li>
+      <li>Construção de autoridade pautada em conhecimento técnico e na sua experiência.</li>
+      <li>Posicionamento que preserva a sobriedade e a dignidade da profissão.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Transparência</div>
+    <h2>Você vai enxergar cada resultado</h2>
+    <p class="lead">O maior erro da última vez foi você nunca ter visto um número sequer. Aqui isso não acontece.</p>
+    <ul class="checklist">
+      <li>Quantos contatos chegaram pelo WhatsApp em cada período.</li>
+      <li>Quanto custou, em média, cada contato gerado.</li>
+      <li>Quais temas e anúncios estão trazendo mais retorno.</li>
+      <li>Acompanhamento do caminho completo, do anúncio até a consulta.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="closing">
+      <h2>O próximo passo</h2>
+      <p>Esta foi uma visão geral da estratégia e do diagnóstico do que aconteceu antes. O detalhamento de como começar a gente conversa com calma, no seu tempo.</p>
+      <p>Se fizer sentido para você, é só me chamar para seguirmos.</p>
+      <div class="sig">Tatiane, vamos fazer diferente desta vez.</div>
+    </div>
+  </div>
+</section>
+
+<footer>Apresentação de estratégia · Conteúdo informativo · Elaborado em conformidade com o Provimento 205/2021 da OAB</footer>
+
+</body>
+</html>
